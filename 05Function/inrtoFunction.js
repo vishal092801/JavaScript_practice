@@ -5,3 +5,6 @@ function hello(){
 }
 
 hello(); // this is the function call 
+
+let rand = Math.floor(Math.random()*4 +1);
+console.log(rand);
