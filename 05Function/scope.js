@@ -7,3 +7,24 @@ function sum(a,b){
 }
 sum(20,40);
 console.log(add);
+
+// similarlly block scope also work like this.
+{
+    let no = 34;
+}
+//console.log(no); // it will through a error
+
+// lexical scope 
+
+function outer(){
+    let x=9;
+    let y=99;
+    function inner(){
+        let a=9;
+        console.log(x); // in this case uper outer funtion ke varible ko inner me use kr skte hai
+    }
+  //  console.log(a); // but when we will try to access the value of inner fuction to the outside its not possible
+    
+}
+
+
